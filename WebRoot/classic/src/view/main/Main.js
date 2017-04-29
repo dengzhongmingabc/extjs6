@@ -13,7 +13,7 @@
                'MyApp.view.main.Body'
            ],
     items: [
-                {xtype:'mainMeun'},
+                {xtype:'mainMeun'}, 
                 { region: "east", width: 200, title: '详情展示', collapsible: true },
                 { xtype:'mainHead' },
                 {xtype:'mainBody' },
