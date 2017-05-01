@@ -3,20 +3,22 @@
     title: "Viewport",
     layout: "border",
     defaults: {
-        bodyStyle: "background-color: #FFFFFF;",
-        frame: true
+        //bodyStyle: "background-color: #FFFFFF;",
+        
     },
     requires: [
                'MyApp.view.main.MainMeun',
                'MyApp.view.main.Head',
                'MyApp.view.main.Footer',
-               'MyApp.view.main.Body'
+               'MyApp.view.main.Body',
+               'MyApp.view.main.Detail',
+               'MyApp.view.main.MainMeunController'
            ],
     items: [
                 {xtype:'mainMeun'}, 
-                { region: "east", width: 200, title: '详情展示', collapsible: true },
+                {xtype:'mainDetail',frame: true},
                 { xtype:'mainHead' },
-                {xtype:'mainBody' },
+                {xtype:'mainBody',frame: true },
                 { xtype:'mainFooter' }
             ]
 });

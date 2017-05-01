@@ -4,17 +4,12 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('MyApp.view.main.MainController', {
+Ext.define('MyApp.view.main.MainMeunController', {
     extend: 'Ext.app.ViewController',
 
-    alias: 'controller.main',
+    alias: 'controller.mainMeun',
 
     itemclick1: function (record , item , index , e , eOpts) {
-    	alert(12);
-        //Ext.Msg.confirm('Confirm', 'Are you sure1?', 'onConfirm', this);
-    },
-
-    onItemSelected: function (sender, record) {
         Ext.Msg.confirm('Confirm', 'Are you sure1?', 'onConfirm', this);
     },
 
