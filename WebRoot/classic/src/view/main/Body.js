@@ -3,6 +3,7 @@ Ext.define('MyApp.view.main.Body',
 				extend:'Ext.TabPanel',
 				collapsible: false,
 				//border: true,
+				id:"content-panel",
 				split: true,
 				xtype:'mainBody',
                 region: "center", //设置方位
@@ -15,12 +16,14 @@ Ext.define('MyApp.view.main.Body',
                         {
                             title: '首页',
                             xtype:'panel',
+                            itemId:'abc',
                             iconCls: 'fa fa-home',
                             html: 'Home Screen'
                         },
                         {
                             title: '联系我们',
                             xtype:'panel',
+                            itemId:'def',
                             iconCls: 'fa fa-phone',
                             html: 'Contact Screen',
                             closable: true 

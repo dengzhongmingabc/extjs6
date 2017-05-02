@@ -23,9 +23,23 @@ Ext.define('MyApp.view.main.MainMeunController', {
         },
 
     itemclick1: function (record , item , index , e , eOpts) {
-        Ext.Msg.confirm('Confirm', 'Are you sure1?', 'onConfirm', this);
+        //Ext.Msg.confirm('Confirm', 'Are you sure1?', 'onConfirm', this);
+    	var main = Ext.getCmp("content-panel"); 
+    	var panel =  main.child('#def');
+        if(!panel){  
+        	var location = (window.location+'').split('/'); 
+        	var basePath = location[0]+'//'+location[2]+'/'+location[3];
+            panel =Ext.create('Ext.panel.Panel', {
+                title: item.data.text, 
+                html : 'itemId',
+                closable: true  
+            });
+            var p = main.add(panel);  
+            main.setActiveTab(p);
+        }else{ 
+            main.setActiveTab(panel);  
+        }
     },
-
     onConfirm: function (choice) {
         if (choice === 'yes') {
             //
