@@ -9,7 +9,7 @@ Ext.define('MyApp.view.main.Footer',
                 	marginTop: '2px'
                 },
                 items: [
-    			        '->',{ xtype: 'tbtext', width:200,html: '<div style="font-size:18px">钟鸣科技股份有限公司版本权所有@2017~2020</div>', id: 'copyright' },
+    			        '->',{ xtype: 'tbtext', width:200,html: '<div style="font-size:18px">版权所有 Copyright © 2017 钟鸣科技股份有限公司</div>', id: 'copyright' },
     			        '->'
     			    ]
             }

@@ -1,18 +1,8 @@
-var store = Ext.create('Ext.data.TreeStore', {
-    root: {
-        expanded: true,
-        children: [
-            { text: '录入明细', leaf: true},
-            { text: '展示明细', leaf: true}
-        ]
-    }
-});
-
-
 Ext.define('MyApp.view.main.MainMeun',
 		{
 
 				extend:'Ext.panel.Panel',
+				id:'menu-panel',
 				controller:'mainMeun',
 				xtype:'mainMeun',
 				scrollable:true,
@@ -26,7 +16,15 @@ Ext.define('MyApp.view.main.MainMeun',
                 region: "west", //设置方位
                 split: true,
                 collapsible: true,
-                items: [
+                listeners: {
+                	render:'onPanelRender'
+        	    },
+                defaults: {
+                	listeners: {
+            	    	itemclick:'itemclick1'
+            	    }
+                }
+                /*items: [
                         	{
                         		xtype:'treepanel',
                         		title: '账本录入',
@@ -74,7 +72,7 @@ Ext.define('MyApp.view.main.MainMeun',
                         	    rootVisible: false,
                         	    iconCls: "fa fa-user-plus"
                         	}
-                            /*{ title: "账本录入", 
+                            { title: "账本录入", 
                               html: "账本录入", 
                               iconCls: "fa fa-th",
                             },
@@ -83,7 +81,7 @@ Ext.define('MyApp.view.main.MainMeun',
                             { title: "支付情况", html: "支付情况", iconCls: "fa fa-briefcase" },
                             { title: "每月盈余", html: "每月盈余", iconCls: "fa fa-line-chart" },
                             { title: "每月报表", html: "每月报表", iconCls: "fa fa-bar-chart" },
-                            { title: "权限用户", html: "权限用户", iconCls: "fa fa-user-plus" }*/
-                       ]
+                            { title: "权限用户", html: "权限用户", iconCls: "fa fa-user-plus" }
+                       ]*/
             }
 );
