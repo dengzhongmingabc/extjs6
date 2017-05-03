@@ -54,12 +54,10 @@ Ext.define('MyApp.view.main.Body',
                                 	   items:[
 													{
 													    xtype:'panel',
-													    border:1,
 													    layout : 'fit',  
 							                            items : [ {xtype : 'indexView3'}]},
 												    {
 							                            xtype:'panel',
-							                            border:1,
 							                            html: 'Home Screen'}
                                 	          ]
                                    }

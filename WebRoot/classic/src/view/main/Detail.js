@@ -4,7 +4,7 @@ Ext.define('MyApp.view.main.Detail',
 				collapsible: true,
 				region: "east",
 				width: 200,
-				title: '详情展示',
+				title: '说明与操作',
 				xtype:'mainDetail'
             }
 );

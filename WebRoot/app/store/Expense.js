@@ -3,22 +3,22 @@ Ext.define('MyApp.store.Expense', {
   xtype : 'expense',  
   fields : [ 'cat', 'spent' ],  
   data : [ {  
-    "cat" : "Restaurant",  
+    "cat" : "衣物",  
     "spent" : 100  
   }, {  
-    "cat" : "Travel",  
+    "cat" : "食品",  
     "spent" : 150  
   }, {  
-    "cat" : "Insurance",  
+    "cat" : "居住",  
     "spent" : 500  
   }, {  
-    "cat" : "Rent",  
+    "cat" : "出行",  
     "spent" : 1000  
   }, {  
-    "cat" : "Groceries",  
+    "cat" : "人情",  
     "spent" : 400  
   }, {  
-    "cat" : "Utilities",  
+    "cat" : "其它",  
     "spent" : 300  
   } ]  
 });  

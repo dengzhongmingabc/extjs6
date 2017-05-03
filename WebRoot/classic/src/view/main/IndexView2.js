@@ -35,7 +35,7 @@ Ext.define('MyApp.view.main.IndexView2',
 			    sprites : {  
 			      type : 'text',  
 			      text : '每月收入与支付对比图',  
-			      font : '20px Helvetica',  
+			      font : '25px Helvetica',  
 			      width : 120,  
 			      height : 35,  
 			      x : 60,  

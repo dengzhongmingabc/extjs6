@@ -51,12 +51,13 @@
      * For example,
      *
      *      "requires": [
-     *          "charts"
+     *          "charts"//
      *      ]
      */
     "requires": [
         "font-awesome",
         "locale",
+        "ext-charts",
         "charts"
     ],
 
