@@ -4,6 +4,7 @@ Ext.define('MyApp.view.main.Body',
 				collapsible: false,
 				//border: true,
 				id:"content-panel",
+				requires:['MyApp.view.main.IndexView1','MyApp.view.main.IndexView2','MyApp.view.main.IndexView3'],
 				split: true,
 				xtype:'mainBody',
                 region: "center", //设置方位
@@ -16,17 +17,53 @@ Ext.define('MyApp.view.main.Body',
                         {
                             title: '首页',
                             xtype:'panel',
-                            itemId:'abc',
                             iconCls: 'fa fa-home',
-                            html: 'Home Screen'
-                        },
-                        {
-                            title: '联系我们',
-                            xtype:'panel',
-                            itemId:'def',
-                            iconCls: 'fa fa-phone',
-                            html: 'Contact Screen',
-                            closable: true 
+                            layout:'vbox',
+                            defaults: {
+                            	flex: 1,
+                            	width: '100%',
+                            	padding: 10,
+                            	defaults: {
+	                            	flex: 1,
+	                            	height: '100%',
+	                            	margin: 10,
+	                            	border:1
+                            	}   
+                            	},
+                            items:[
+                                   {
+                                	   layout:'hbox',
+                                	   xtype:'panel',
+                                	   items:[
+													{
+													    xtype:'panel',
+													    html: 'Home Screen',
+												    	layout : 'fit',  
+												    	items : [ {xtype : 'indexView1'}]  	
+													},
+												    {
+							                            xtype:'panel',
+							                            html: 'Home Screen',
+							                            layout : 'fit',  
+							                            items : [ {xtype : 'indexView2'}]}
+                                	          ]
+                                   },
+                                   {
+                                	   layout:'hbox',
+                                	   xtype:'panel',
+                                	   items:[
+													{
+													    xtype:'panel',
+													    border:1,
+													    layout : 'fit',  
+							                            items : [ {xtype : 'indexView3'}]},
+												    {
+							                            xtype:'panel',
+							                            border:1,
+							                            html: 'Home Screen'}
+                                	          ]
+                                   }
+                                   ]
                         }
                     ]
             }

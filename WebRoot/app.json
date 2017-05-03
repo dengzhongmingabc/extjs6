@@ -56,7 +56,8 @@
      */
     "requires": [
         "font-awesome",
-        "locale"
+        "locale",
+        "charts"
     ],
 
     "locale": "zh_CN",

@@ -25,13 +25,15 @@ Ext.define('MyApp.view.main.MainMeunController', {
     itemclick1: function (record , item , index , e , eOpts) {
         //Ext.Msg.confirm('Confirm', 'Are you sure1?', 'onConfirm', this);
     	var main = Ext.getCmp("content-panel"); 
-    	var panel =  main.child('#def');
+    	var panel =  main.child('*[id=itemPanel'+item.id+']');
         if(!panel){  
         	var location = (window.location+'').split('/'); 
         	var basePath = location[0]+'//'+location[2]+'/'+location[3];
+        	var baidu = 'https://www.hao123.com/';
             panel =Ext.create('Ext.panel.Panel', {
                 title: item.data.text, 
-                html : 'itemId',
+                html : '<iframe scrolling="auto" frameborder="0" width="100%" height="100%" src="'+baidu+'"></iframe>',
+                id:'itemPanel'+item.id,
                 closable: true  
             });
             var p = main.add(panel);  
@@ -78,7 +80,7 @@ Ext.define('MyApp.view.main.MainMeunController', {
             text:'权限用户',
     		iconCls: "fa fa-user-plus",
     		children: [{id:'11',text: '录入明细', leaf: true},{id:'12',text: '展示明细', leaf: true}]
-	    	},
+	    	}
     	];
     	var test = Ext.getCmp('menu-panel');
 		var cs  = [];
