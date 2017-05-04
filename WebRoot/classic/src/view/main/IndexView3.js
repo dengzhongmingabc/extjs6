@@ -1,7 +1,7 @@
 Ext.define('MyApp.view.main.IndexView3',
 		{
 				extend:'Ext.chart.PolarChart',
-				requires:['MyApp.store.Expense','Ext.chart.series.Bar3D','Ext.chart.series.Pie','Ext.chart.interactions.ItemHighlight'],
+				requires:['MyApp.store.Expense','Ext.chart.series.Bar3D','Ext.chart.series.Pie','Ext.chart.interactions.ItemHighlight','Ext.chart.series.Area'],
 			    xtype : 'indexView3',
 			    store : Ext.create("MyApp.store.Expense"),
 			    animate:true,
@@ -9,16 +9,16 @@ Ext.define('MyApp.view.main.IndexView3',
 			        docked : 'right'  
 			      },  
 			      insetPadding : {  
-			        top : 100,  
+			        top : 50,  
 			        bottom : 20,  
 			        left : 20,  
-			        right : 40  
+			        right : 20  
 			      },  
 			      series : [ {  
 			        type : 'pie',  
 			        angleField : 'spent',  
 			        label : {  
-			          field : 'cat',  
+			          field : 'cat'  
 			        },  
 			        highlight:{
                         segment:{
@@ -26,18 +26,18 @@ Ext.define('MyApp.view.main.IndexView3',
                         }
                     },
 			        tooltip : {  
-			          trackMouse : true,  
+			            trackMouse : true, 
 			            renderer : function(storeItem, item) {  
-			              var value = ((parseFloat(storeItem.get('spent')/ storeItem.store.sum('spent')) * 100.0).toFixed(2));  
-			              this.setHtml(storeItem.get('cat') + ': ' + value + '%');  
+			            	var value = ((parseFloat(item.data.spent/item.store.sum('spent')) * 100.0).toFixed(2));
+			                this._tooltip.setHtml(item.get('cat') + ': ' + value + '%');
 			            }  
 			        }
 			      }],
 			      sprites : {  
 				      type : 'text',  
-				      text : '总支出类别占比',  
+				      text : '总支出占比',  
 				      font : '25px Helvetica',  
-				      width : 120,  
+				      width : 100,  
 				      height : 15,  
 				      x : 60,  
 				      y : 40  

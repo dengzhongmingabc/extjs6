@@ -1,8 +1,8 @@
-Ext.define('MyApp.view.main.IndexView2',
+Ext.define('MyApp.view.main.IndexView4',
 		{
 				extend:'Ext.chart.CartesianChart',
 				requires:['MyApp.store.IndexStore2','Ext.chart.axis.Numeric','Ext.chart.axis.Category','Ext.chart.series.Bar'],
-			    xtype : 'indexView2',
+			    xtype : 'indexView4',
 			    store : Ext.create("MyApp.store.IndexStore2"),
 			    insetPadding : {  
 			      top : 60,  
@@ -26,21 +26,20 @@ Ext.define('MyApp.view.main.IndexView2',
 			      },  
 			      position : 'bottom'  
 			    }],  
-			    series : [ {  
-			      type : 'bar3d',  //bar 平面图
-			      stacked:false, //true 加上面
-			      xField : 'year',  
-			      yField : [ 'total', 'slaves' ],
-			      tooltip : {  
-			            trackMouse : true, 
-			            renderer : function(storeItem, item) {  
-			                this._tooltip.setHtml(item.get('year') + ', 收入:' + item.data.total+ '、 支出:' + item.data.slaves );
-			            }  
-			        }
-			    }],  
+			    series: [ {  
+			        type : 'area',  
+			        xField : 'year',  
+			        stacked : false,  
+			        title : [ 'Total', 'slaves' ],  
+			        yField : [ 'total', 'slaves' ],  
+			        style : {  
+			          stroke : "#94ae0a",  
+			          fillOpacity : 0.6  
+			        }  
+			      } ] ,  
 			    sprites : {  
 			      type : 'text',  
-			      text : '每月收入与支付对比图',  
+			      text : '每月盈余',  
 			      font : '25px Helvetica',  
 			      width : 120,  
 			      height : 35,  

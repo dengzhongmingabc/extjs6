@@ -3,6 +3,7 @@ Ext.define('MyApp.view.main.IndexView1',
 				extend:'Ext.chart.CartesianChart',
 				requires:['MyApp.store.IndexStore','Ext.chart.axis.Numeric','Ext.chart.axis.Category','Ext.chart.series.Bar'],
 	    	    xtype : 'indexView1',  
+	    	    border:false,
 	    	    insetPadding : {  
 	    	      top : 60,  
 	    	      bottom : 20,  
@@ -29,7 +30,13 @@ Ext.define('MyApp.view.main.IndexView1',
 	    	    series : [ {  
 	    	      type : 'bar',  
 	    	      xField : 'year',  
-	    	      yField : [ 'population' ]  
+	    	      yField : [ 'population' ],
+	    	      tooltip : {  
+			            trackMouse : true, 
+			            renderer : function(storeItem, item) {  
+			                this._tooltip.setHtml(item.get('year') + ': ' + item.data.population );
+			            }  
+			        }
 	    	    } ],  
 	    	    sprites : {  
 	    	      type : 'text',  

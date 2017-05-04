@@ -4,7 +4,7 @@ Ext.define('MyApp.view.main.Body',
 				collapsible: false,
 				//border: true,
 				id:"content-panel",
-				requires:['MyApp.view.main.IndexView1','MyApp.view.main.IndexView2','MyApp.view.main.IndexView3'],
+				requires:['MyApp.view.main.IndexView1','MyApp.view.main.IndexView2','MyApp.view.main.IndexView3','MyApp.view.main.IndexView4'],
 				split: true,
 				xtype:'mainBody',
                 region: "center", //设置方位
@@ -57,8 +57,9 @@ Ext.define('MyApp.view.main.Body',
 													    layout : 'fit',  
 							                            items : [ {xtype : 'indexView3'}]},
 												    {
-							                            xtype:'panel',
-							                            html: 'Home Screen'}
+							                            	xtype:'panel',
+														    layout : 'fit',  
+								                            items : [ {xtype : 'indexView4'}]}
                                 	          ]
                                    }
                                    ]

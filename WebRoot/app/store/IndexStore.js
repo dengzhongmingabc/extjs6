@@ -8,27 +8,27 @@ Ext.define('MyApp.store.IndexStore', {
 	    "population" : 350  
 	  },{  
 	    "year" : "1650",  
-	    "population" : 50368  
+	    "population" : 503  
 	  },{  
 	    "year" : "1700",  
-	    "population" : 250888  
+	    "population" : 258  
 	  },{  
 	    "year" : "1750",  
-	    "population" : 1170760  
+	    "population" : 117  
 	  },{  
 	    "year" : "1800",  
-	    "population" : 5308483  
+	    "population" : 530  
 	  },{  
 	    "year" : "1900",  
-	    "population" : 76212168  
+	    "population" : 762  
 	  },{  
 	    "year" : "1950",  
-	    "population" : 151325798  
+	    "population" : 151  
 	  },{  
 	    "year" : "2000",  
-	    "population" : 281421906  
+	    "population" : 2814 
 	  },{  
 	    "year" : "2010",  
-	    "population" : 308745538  
+	    "population" : 3087
 	  }]  
 	});  
