@@ -1,8 +1,7 @@
 Ext.define('MyApp.view.adddata.AddDataPanel',
 		{
-				extend:'Ext.calendar.panel.Panel',
+				extend:'Ext.panel.Panel',
 				title: '说明与操作',
-				xtype:'addDataPanel',
-				layout:'fit'
+				xtype:'addDataPanel'
             }
 );
