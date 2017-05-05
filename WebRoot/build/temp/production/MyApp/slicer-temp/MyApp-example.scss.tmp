@@ -1,5 +1,5 @@
 $app-name:  dynamic( 'MyApp' );
-$image-search-path: 'E:/wksps2014/extjs6/WebRoot/build/production/MyApp/classic/resources';
+$image-search-path: 'C:/workspace/extjs6/WebRoot/build/production/MyApp/classic/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
@@ -1060,6 +1060,7 @@ $include-myapp-store-expense: dynamic(true);;
 $include-myapp-store-indexstore: dynamic(true);;
 $include-myapp-store-indexstore2: dynamic(true);;
 $include-myapp-store-personnel: dynamic(true);;
+$include-myapp-view-adddata-adddatapanel: dynamic(true);;
 $include-myapp-view-main-body: dynamic(true);;
 $include-myapp-view-main-detail: dynamic(true);;
 $include-myapp-view-main-footer: dynamic(true);;
