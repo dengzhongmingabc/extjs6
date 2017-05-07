@@ -29,10 +29,10 @@ Ext.define('MyApp.view.main.MainMeunController', {
         if(!panel){  
         	var location = (window.location+'').split('/'); 
         	var basePath = location[0]+'//'+location[2]+'/'+location[3];
-        	var baidu = 'https://www.hao123.com/';
-            panel =Ext.create('Ext.panel.Panel', {
+        	//var baidu = 'https://www.hao123.com/';
+            panel =Ext.create(item.data.dass, {
                 title: item.data.text, 
-                html : '<iframe scrolling="auto" frameborder="0" width="100%" height="100%" src="'+baidu+'"></iframe>',
+                //html : '<iframe scrolling="auto" frameborder="0" width="100%" height="100%" src="'+baidu+'"></iframe>',
                 id:'itemPanel'+item.id,
                 closable: true  
             });
@@ -54,7 +54,7 @@ Ext.define('MyApp.view.main.MainMeunController', {
             {
             text:'系统录入',
     		iconCls: "fa fa-th",
-    		children: [{id:'1',text: '录入明细', leaf: true},{id:'2',text: '展示明细', leaf: true}]
+    		children: [{id:'1',dass:'MyApp.view.data.AddData',text: '录入明细', leaf: true},{id:'2',text: '展示明细', leaf: true}]
 	    	},
 	    	{
             text:'账面统计',
