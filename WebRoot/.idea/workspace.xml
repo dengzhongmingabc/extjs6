@@ -47,21 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataGrid.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataGrid.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classic/src/view/data/DataGrid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="775">
+              <caret line="31" column="55" lean-forward="false" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddDataController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddDataController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/main/AddDataController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="475">
+              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -124,8 +124,8 @@
       <list>
         <option value="$PROJECT_DIR$/classic/src/view/data/AddData.js" />
         <option value="$PROJECT_DIR$/app/view/main/MainMeunController.js" />
-        <option value="$PROJECT_DIR$/classic/src/view/data/DataGrid.js" />
         <option value="$PROJECT_DIR$/app/view/main/AddDataController.js" />
+        <option value="$PROJECT_DIR$/classic/src/view/data/DataGrid.js" />
       </list>
     </option>
   </component>
@@ -398,12 +398,12 @@
       <updated>1494318632669</updated>
       <workItem from="1494318633983" duration="3614000" />
       <workItem from="1494335520656" duration="420000" />
-      <workItem from="1494337591965" duration="1528000" />
+      <workItem from="1494337591965" duration="2775000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5562000" />
+    <option name="totallyTimeSpent" value="6809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -596,18 +596,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classic/src/view/data/DataGrid.js">
+    <entry file="file://$PROJECT_DIR$/app/view/main/AddDataController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state relative-caret-position="475">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/main/AddDataController.js">
+    <entry file="file://$PROJECT_DIR$/classic/src/view/data/DataGrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="775">
+          <caret line="31" column="55" lean-forward="false" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
           <folding />
         </state>
       </provider>
