@@ -13,6 +13,10 @@ Ext.define('MyApp.view.data.DataGrid',
 		{
 				extend:'Ext.grid.Panel',
 			    xtype : 'add-DataGrid',
+            	controller:'addDataController',
+				listeners: {
+					itemclick:'itemclick1'
+				},
 				title: '本月列表',
 				store: Ext.data.StoreManager.lookup('simpsonsStore'),
 				columns: [
