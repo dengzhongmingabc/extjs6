@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee6b5856-aed7-4846-8713-f15bfb72e55c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/app/view/main/AddDataController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/.idea/workspace.xml" afterPath="$PROJECT_DIR$/WebRoot/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/app.json" afterPath="$PROJECT_DIR$/WebRoot/app.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/build/temp/development/MyApp/sencha-compiler/app/full-page-master-bundle.js" afterPath="$PROJECT_DIR$/WebRoot/build/temp/development/MyApp/sencha-compiler/app/full-page-master-bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/classic.json" afterPath="$PROJECT_DIR$/WebRoot/classic.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/classic.jsonp" afterPath="$PROJECT_DIR$/WebRoot/classic.jsonp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/classic/src/view/data/DataGrid.js" afterPath="$PROJECT_DIR$/WebRoot/classic/src/view/data/DataGrid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/modern.json" afterPath="$PROJECT_DIR$/WebRoot/modern.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/modern.jsonp" afterPath="$PROJECT_DIR$/WebRoot/modern.jsonp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/index.jsp" afterPath="$PROJECT_DIR$/WebRoot/login.jsp" />
-    </list>
+    <list default="true" id="ee6b5856-aed7-4846-8713-f15bfb72e55c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -156,8 +143,7 @@
     <option name="totallyTimeSpent" value="1644000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
